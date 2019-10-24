@@ -1,15 +1,17 @@
-<h1>Labels</h1>
-<table border="1">
-  <thead>
-    <tr>
-      <th>Tracking Number</th>
-      <th>Used Weight</th>
-      <th>Real Weight</th>
-      <th>Overweight</th>
-      <th>Notes</th>
-    <tr>
-  </thead>
-  <tbody>
-    <%= render partial: 'label', collection: @labels %>
-  </tbody>
-</table>
+<div class="container">
+  <h1>Overweight Report</h1>
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Tracking Number</th>
+        <th scope="col">Used Weight (KG)</th>
+        <th scope="col">Real Weight (KG)</th>
+        <th scope="col">Overweight (KG)</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render partial: 'label', collection: @labels %>
+    </tbody>
+  </table>
+</div>
