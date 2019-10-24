@@ -1,0 +1,15 @@
+<h1>Labels</h1>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Tracking Number</th>
+      <th>Used Weight</th>
+      <th>Real Weight</th>
+      <th>Overweight</th>
+      <th>Notes</th>
+    <tr>
+  </thead>
+  <tbody>
+    <%= render partial: 'label', collection: @labels %>
+  </tbody>
+</table>
